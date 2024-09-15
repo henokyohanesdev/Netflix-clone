@@ -29,7 +29,7 @@ export default function Banner({ hoverstate }) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
 
-  const opts = { height: "390", width: "100%", playerVars: { autoplay: 1 } };
+  const opts = { height: "870", width: "100%", playerVars: { autoplay: 1 } };
 
   const handleclick = (movie) => {
     if (trailerUrl) {
@@ -84,11 +84,16 @@ export default function Banner({ hoverstate }) {
             <button className="banner_button" onClick={() => handleclick(movie)} >
               <PlayArrowIcon fontSize="large" /> Play
             </button>
-            <button className="banner_button"> More Info </button>
+            <button className="banner_button" > More Info </button>
+          </div>
+          <div className={`stop_button ${trailerUrl ? "" : "stop_hide"}`} onClick={() => settrailerUrl("")}>
+            Stop
           </div>
         </div>
         <div className="banner_fadeBottom"></div>
-        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} />}
+        <div className="banner_trailer">
+        {trailerUrl && <YouTube videoId={trailerUrl} opts={opts} style={{zIndex: "100"}}/>}
+        </div>
       </div>
     </>
   );
