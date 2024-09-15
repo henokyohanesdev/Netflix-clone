@@ -6,16 +6,18 @@ import './Rows.css'
 export default function Rows() {
   return (
     <>
-      <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals} isLargeRow={true}/>
+      <Row title="Netflix Originals" fetchUrl={requests.fetchNetflixOriginals} isLargeRow />
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
+      <Row title="Family Movies" fetchUrl={requests.fetchfamily} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
       <Row title="Horror Movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
-      <Row title="Popular" fetchUrl={requests.fetchPopular} />
-      <Row title="Adventure Movies" fetchUrl={requests.fetchAdventureMovies} />
+      <Row title="Adventures" fetchUrl={requests.fetchAdventures} />
+      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries } />
+      <Row title="Anime" fetchUrl={requests.fetchAnimes} />
+      <Row title="Tv Movies" fetchUrl={requests.fetchTvMovies} />
     </>
   )
 }
