@@ -1,0 +1,54 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: .3vw;
+    color: white;
+    font-size: .7vw;
+    z-index: 10;
+    transition: all 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.navbar_black {
+    background-color: black;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    list-style: none;
+}
+
+.left_navbar {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 2%;
+}
+
+.left_navbar img {
+    width: 7vw;
+}
+
+.left_navbar li:hover {
+    opacity: 0.6;
+}
+
+.right_navbar {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-right: 4vw;
+    font-size: .7vw;
+}
+
+.right_navbar img {
+    width: 1.6vw;
+}
+
+.dropdown {
+    margin: 0 -1vw;
+}

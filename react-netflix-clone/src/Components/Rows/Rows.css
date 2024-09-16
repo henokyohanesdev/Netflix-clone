@@ -1,20 +1,19 @@
 .row {
-  margin-left: 40px;
+  margin-left: 3%;
   position: relative;
 }
 
 .row_title {
   color: white;
-  font-size: 1.5rem;
-  margin-left: 1rem;
-  margin-top: 1.5rem;
+  font-size: 1.5vw;
+  margin-top: .5vw;
 }
 
 .row_container {
   display: flex;
   overflow-x: scroll;
   overflow-y: hidden;
-  padding: 20px;
+  padding: .5vw;
   scroll-behavior: smooth;
   max-width: 100%;
   position: relative;
@@ -28,8 +27,8 @@
 
 .row_poster {
   object-fit: contain; /* ensures that the image is not distorted */
-  height: 150px;
-  margin-right: 10px;
+  height: 10vw;
+  margin-right: .5vw;
   transition: transform 0.3s ease-in-out;
   position: relative; /* ensures that the image is positioned relative to its parent */
   z-index: 1;
@@ -58,8 +57,8 @@
 
 .row_posterLarge {
   object-fit: contain;
-  height: 300px;
-  margin-right: 10px;
+  height: 20vw;
+  margin-right: .5vw;
   transition: transform 0.3s ease-in-out;
   position: relative;
   z-index: 1;
@@ -80,7 +79,7 @@
   transform: translateY(-50%); /* centers the arrow vertically */
   background: rgba(0, 0, 0, 0.5);
   border: none;
-  padding: 10px 0;
+  padding: .5vw 0;
   opacity: 0.1;
   transition: opacity 0.3s ease;
 }
@@ -115,14 +114,11 @@
   outline: none;
   border: none;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2vw;
   border-radius: 0.2vw;
-  margin-right: 1rem;
-  padding-left: 2rem;
-  padding-right: 3rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  margin-right: 1vw;
+  padding-left: .5vw 3vw .5vw 2vw;
   background-color: rgba(51, 51, 51, 0.5);
   position: absolute;
-  top: 560px;
+  top: 35vw;
 }

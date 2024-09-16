@@ -56,7 +56,7 @@ export default function Banner({ hoverstate }) {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "90vh",
+          height: "45vw",
         }}
       >
         <div className="banner_fadeTop"></div>
@@ -64,18 +64,18 @@ export default function Banner({ hoverstate }) {
           {/* Show hover menu if hoverstate is true */}
           <div className={`banner_show ${hoverstate ? "" : "banner_hide"}`}>
             <ul>
-              <li> <img src={kids} alt="kids png" style={{ marginRight: "10px" }} /> <a href="#">kids</a> </li>
-              <li> <EditIcon style={{ marginRight: "10px" }} /> <a href="#">manage profiles</a> </li>
-              <li> <TransferIcon style={{ marginRight: "10px" }} /> <a href="#">transfer profile</a> </li>
-              <li> <PersonIcon style={{ marginRight: "10px" }} /> <a href="#">account</a> </li>
-              <li> <HelpOutlineIcon style={{ marginRight: "10px" }} /> <a href="#">help center</a> </li>
+              <li> <img src={kids} alt="kids png" style={{ marginRight: ".4vw" }} /> <a href="#">kids</a> </li>
+              <li> <EditIcon style={{ marginRight: ".4vw" }} /> <a href="#">manage profiles</a> </li>
+              <li> <TransferIcon style={{ marginRight: ".4vw" }} /> <a href="#">transfer profile</a> </li>
+              <li> <PersonIcon style={{ marginRight: ".4vw" }} /> <a href="#">account</a> </li>
+              <li> <HelpOutlineIcon style={{ marginRight: ".4vw" }} /> <a href="#">help center</a> </li>
               <li
                 className="sign_out"
                 style={{
                   borderTop: "1px solid #C0C0C0",
-                  padding: "10px", width: "100%",
+                  padding: ".5vw", width: "92%",
                   textAlign: "center", 
-                  marginTop: "10px"
+                  marginTop: ".4vw"
                 }}
               >
                 <a href="#">sign out of netflix</a>
@@ -97,7 +97,7 @@ export default function Banner({ hoverstate }) {
           )}
           {/* If trailer is playing, show close button */}
           {trailerUrl && (
-            <div className="close_button" onClick={() => settrailerUrl("")}>
+            <div className="close__button" onClick={() => settrailerUrl("")}>
               <CloseIcon fontSize="large" />Close
             </div>
           )}
