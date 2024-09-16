@@ -104,7 +104,7 @@
     transition: all 0.2s;
 }
 
-.stop_button {
+.close_button {
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -124,14 +124,10 @@
     top: 560px;
 }
 
-.stop_button:hover {
+.close_button:hover {
     color: black;
     background-color: white;
     transition: all 0.2s;
-}
-
-.stop_hide {
-    display: none;
 }
 
 .banner_fadeBottom {
@@ -148,8 +144,5 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* right: 0; */
-    /* bottom: 0; */
     width: 100%;
-    /* height: 900vh; */
 }
