@@ -6,7 +6,7 @@ import avatar from "../../assets/avatar.png";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import "./Navbar.css";
 
-export default function Navbar({ setHoverstate }) {
+export default function Navbar({ setHoverstate, setClickstate }) {
   // State to determine whether to show the navbar background color change
   const [show, handleshow] = useState(false);
 
@@ -30,15 +30,21 @@ export default function Navbar({ setHoverstate }) {
   return (
     <>
       <div className={`navbar ${show ? "navbar_black" : ""}`}>
-        <ul className="left_navbar">
-          <li> <img src={logo} alt="Netflix logo" /> </li>
-          <li>Home</li>
-          <li>TV Shows</li>
-          <li>Movies</li>
-          <li>New & Popular</li>
-          <li>My List</li>
-          <li>Browse by Languages</li>
-        </ul>
+        <div className="logo_navbar">
+          <img className="logo" src={logo} alt="Netflix logo" />
+          <div className="hide">Browse</div>
+          <div className="left_dropdown hide" onClick={() => setClickstate(prevState => !prevState)}>
+            <ArrowDropDownIcon />
+          </div>
+          <ul className="left_navbar">
+            <li>Home</li>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>New & Popular</li>
+            <li>My List</li>
+            <li>Browse by Languages</li>
+          </ul>
+        </div>
         <ul className="right_navbar">
           <li> <SearchRoundedIcon fontSize="large" /> </li>
           <li>Kids</li>
@@ -49,9 +55,8 @@ export default function Navbar({ setHoverstate }) {
             <img src={avatar} alt="Avatar" />
           </li>
           <li
-            className="dropdown"
-            onMouseEnter={() => setHoverstate(true)}
-            onMouseLeave={() => setHoverstate(false)}
+            className="right_dropdown"
+            onClick = {() => setHoverstate (prevState => !prevState)}
           >
             <ArrowDropDownIcon />
           </li>

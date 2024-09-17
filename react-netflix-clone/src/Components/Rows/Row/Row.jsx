@@ -32,7 +32,7 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
     const posterPosition = e.target.getBoundingClientRect(); // Get the position and size of the clicked poster
     const containerPosition = rowContainerRef.current.getBoundingClientRect(); // Get the container's position
 
-    const scaleFactor = isLargeRow ? 1.4 : 2.2;
+    const scaleFactor = isLargeRow ? 1.15 : 1.9;
 
     // Calculate scaled dimensions
     const scaledWidth = posterPosition.width * scaleFactor;
@@ -103,7 +103,7 @@ export default function Row({ title, fetchUrl, isLargeRow }) {
         <div
           className="row_trailer"
           style={{
-            top: `${hoveredPoster.top}px`,
+            top: `${hoveredPoster.top / 1.2}px`,
             left: `${hoveredPoster.left}px`,
             width: `${hoveredPoster.width}px`,
             height: `${hoveredPoster.height}px`,

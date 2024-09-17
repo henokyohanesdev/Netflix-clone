@@ -11,23 +11,24 @@
     z-index: 2;
 }
 
-.banner_show {
+.banner_right {
     background-color: #111;
-    width: 12%;
-    margin-left: 82%;
-    margin-right: 2%;
+    width: 13rem;
     border: 1px solid #c0c0c0;
     position: fixed;
+    right: 3vw;
+    top: 4vw;
     z-index: 10;
 }
 
-.banner_show a {
-    text-decoration: none;
-    color: white;
-}
-
-.banner_show a:hover {
-    text-decoration: underline;
+.banner_left {
+    background-color: #111;
+    width: 12rem;
+    padding: .5rem .5rem 1rem 1rem;
+    position: fixed;
+    left: 12vw;
+    top: 4vw;
+    z-index: 10;
 }
 
 .banner_hide {
@@ -36,17 +37,41 @@
     position: fixed;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+.banner_left ul li {
+    list-style: none;
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    font-size: .8rem;
+    opacity: .6;
+}
 
-.banner_show:hover .banner_hide,
+.banner_left ul li:hover {
+    background-color: #333;
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.banner_right a {
+    text-decoration: none;
+    color: white;
+    font-size: .8rem;
+}
+
+.banner_right a:hover {
+    text-decoration: underline;
+}
+
+
+.banner_right:hover .banner_hide,
 .banner_hide:hover {
     display: block;
     opacity: 1;
     visibility: visible;
 }
 
-.banner_show li {
+.banner_right li {
     list-style: none;
-    margin-right: 2vw;
+    margin-right: 2em;
     padding: .4vw .6vw;
     color: white;
     font-size: .7vw;
@@ -115,6 +140,7 @@
 }
 
 .close__button:hover {
+    cursor: pointer;
     color: black;
     background-color: white;
     transition: all 0.2s;

@@ -6,10 +6,11 @@ import Rows from '../../Components/Rows/Rows'
 
 export default function Home() {
     const [hoverstate, setHoverstate] = useState(false);
+    const [clickstate, setClickstate] = useState(false);
     return (
         <>
-            <Navbar setHoverstate={setHoverstate}/>
-            <Banner hoverstate={hoverstate}/>
+            <Navbar setHoverstate={setHoverstate} setClickstate={setClickstate}/>
+            <Banner hoverstate={hoverstate} clickstate={clickstate}/>
             <Rows />
             {/* <Footer /> */}
         </>

@@ -12,7 +12,7 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import CloseIcon from "@mui/icons-material/Close";
 import "./Banner.css";
 
-export default function Banner({ hoverstate }) {
+export default function Banner({ hoverstate, clickstate }) {
 
   const [movie, setMovie] = useState([]);
   const [trailerUrl, settrailerUrl] = useState("");
@@ -56,26 +56,36 @@ export default function Banner({ hoverstate }) {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "45vw",
+          height: "45rem",
         }}
       >
         <div className="banner_fadeTop"></div>
         <div className="banner_contents">
-          {/* Show hover menu if hoverstate is true */}
-          <div className={`banner_show ${hoverstate ? "" : "banner_hide"}`}>
+          <div className={`banner_left ${clickstate ? "" : "banner_hide"}`} >
             <ul>
-              <li> <img src={kids} alt="kids png" style={{ marginRight: ".4vw" }} /> <a href="#">kids</a> </li>
-              <li> <EditIcon style={{ marginRight: ".4vw" }} /> <a href="#">manage profiles</a> </li>
-              <li> <TransferIcon style={{ marginRight: ".4vw" }} /> <a href="#">transfer profile</a> </li>
-              <li> <PersonIcon style={{ marginRight: ".4vw" }} /> <a href="#">account</a> </li>
-              <li> <HelpOutlineIcon style={{ marginRight: ".4vw" }} /> <a href="#">help center</a> </li>
+              <li><a>Home</a></li>
+              <li><a>TV Shows</a></li>
+              <li><a>Movies</a></li>
+              <li><a>New & Popular</a></li>
+              <li><a>My List</a></li>
+              <li><a>Browse by Languages</a></li>
+            </ul>
+          </div>
+          {/* Show hover menu if hoverstate is true */}
+          <div className={`banner_right ${hoverstate ? "" : "banner_hide"}`}>
+            <ul>
+              <li> <img src={kids} alt="kids png" style={{ marginRight: ".4rem" }} /> <a href="#">kids</a> </li>
+              <li> <EditIcon style={{ marginRight: ".4rem" }} /> <a href="#">manage profiles</a> </li>
+              <li> <TransferIcon style={{ marginRight: ".4rem" }} /> <a href="#">transfer profile</a> </li>
+              <li> <PersonIcon style={{ marginRight: ".4rem" }} /> <a href="#">account</a> </li>
+              <li> <HelpOutlineIcon style={{ marginRight: ".4rem" }} /> <a href="#">help center</a> </li>
               <li
                 className="sign_out"
                 style={{
                   borderTop: "1px solid #C0C0C0",
-                  padding: ".5vw", width: "92%",
+                  padding: ".5rem", width: "92%",
                   textAlign: "center", 
-                  marginTop: ".4vw"
+                  marginTop: ".4rem",
                 }}
               >
                 <a href="#">sign out of netflix</a>
