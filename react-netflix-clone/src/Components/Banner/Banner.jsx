@@ -56,7 +56,7 @@ export default function Banner({ hoverstate, clickstate }) {
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
-          height: "45rem",
+          height: "45vw",
         }}
       >
         <div className="banner_fadeTop"></div>

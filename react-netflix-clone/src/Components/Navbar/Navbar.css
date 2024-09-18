@@ -1,24 +1,3 @@
-@media (max-width: 992px) {
-    .hide {
-        display: block;
-    }
-
-    .left_navbar {
-        display: none;
-    }
-}
-
-@media (min-width: 992px) {
-    .hide {
-        display: none;
-    }
-
-    .left_navbar {
-        display: flex;
-        align-items: center;
-        gap: 1vw;
-    }
-}
 .logo_navbar {
     display: flex;
     align-items: center;
@@ -26,6 +5,7 @@
     margin-left: 2%;
     
 }
+
 .navbar {
     display: flex;
     align-items: center;
@@ -73,4 +53,26 @@
 
 .right_dropdown, .left_dropdown {
     margin: 0 -1vw;
+}
+
+@media (min-width: 992px) {
+    .hide {
+        display: none;
+    }
+    
+    .left_navbar {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .hide {
+        display: block;
+    }
+
+    .left_navbar {
+        display: none;
+    }
 }
