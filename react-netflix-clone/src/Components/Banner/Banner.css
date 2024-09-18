@@ -17,7 +17,7 @@
     border: 1px solid #c0c0c0;
     position: fixed;
     right: 3vw;
-    top: 4vw;
+    top: 4.8vw;
     z-index: 10;
 }
 
@@ -27,7 +27,7 @@
     padding: .5rem .5rem 1rem 1rem;
     position: fixed;
     left: 12vw;
-    top: 4vw;
+    top: 4.8vw;
     z-index: 10;
 }
 
