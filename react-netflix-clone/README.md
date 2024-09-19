@@ -23,35 +23,35 @@ Tech Stack
 
 File Structure
 
-react-netflix-clone
-├── src/                       # Source code for the app
-│   ├── Components/            # Reusable components
-│   │   ├── Banner             # Banner component for displaying random movies
-│   │   │   ├── Banner.css     # Banner component styles
-│   │   │   ├── Banner.jsx     # Banner component
-|   |   ├── Footer             # Footer component folder
-│   │   │   ├── Footer.css     # Footer component styles
-│   │   │   ├── Footer.jsx     # Footer component
-│   │   ├── Navbar             # Navigation bar component
-│   │   │   ├── Navbar.css     # Navbar component styles
-│   │   │   ├── Navbar.jsx     # Navbar component
-│   │   ├── Rows               # Rows component for displaying movies
-│   │   │   ├── Rows.css       # Rows component styles
-│   │   │   ├── Rows.jsx       # Rows component
-│   ├── pages/Home             # Pages for the app
-│   │   ├──Home.jsx            # Home Page for the app
-│   ├── assets/                # Images
-│   ├── utils/                 # Helper functions
-│   │   ├──axios.jsx           # Axios instance for API calls
-│   │   ├──requests.jsx        # API requests configuration
-│   ├── App.css                # Global styles
-│   ├── App.jsx                # React DOM rendering entry point
-│   └── main.jsx               # Main entry point for the React app
-├── .gitignore                 # Files to ignore in Git
-├── README.md                  # Project README file
-├── eslint.config.js           # ESLint configuration file
-├── index.html                 # Main HTML file
-├── package-lock.json          # Auto-generated lock file for npm dependencies
-├── package.json               # Project metadata and dependencies
-├── vite.config.js             # Vite configuration file
-README.md                      # Project README file
+    react-netflix-clone
+    ├── src/                       # Source code for the app
+    │   ├── Components/            # Reusable components
+    │   │   ├── Banner             # Banner component for displaying random movies
+    │   │   │   ├── Banner.css     # Banner component styles
+    │   │   │   ├── Banner.jsx     # Banner component
+    |   |   ├── Footer             # Footer component folder
+    │   │   │   ├── Footer.css     # Footer component styles
+    │   │   │   ├── Footer.jsx     # Footer component
+    │   │   ├── Navbar             # Navigation bar component
+    │   │   │   ├── Navbar.css     # Navbar component styles
+    │   │   │   ├── Navbar.jsx     # Navbar component
+    │   │   ├── Rows               # Rows component for displaying movies
+    │   │   │   ├── Rows.css       # Rows component styles
+    │   │   │   ├── Rows.jsx       # Rows component
+    │   ├── pages/Home             # Pages for the app
+    │   │   ├──Home.jsx            # Home Page for the app
+    │   ├── assets/                # Images
+    │   ├── utils/                 # Helper functions
+    │   │   ├──axios.jsx           # Axios instance for API calls
+    │   │   ├──requests.jsx        # API requests configuration
+    │   ├── App.css                # Global styles
+    │   ├── App.jsx                # React DOM rendering entry point
+    │   └── main.jsx               # Main entry point for the React app
+    ├── .gitignore                 # Files to ignore in Git
+    ├── README.md                  # Project README file
+    ├── eslint.config.js           # ESLint configuration file
+    ├── index.html                 # Main HTML file
+    ├── package-lock.json          # Auto-generated lock file for npm dependencies
+    ├── package.json               # Project metadata and dependencies
+    ├── vite.config.js             # Vite configuration file
+    README.md                      # Project README file
